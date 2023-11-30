@@ -124,9 +124,7 @@ function imageBlockClicked(imageId, captchaId) {
  function radioButtonSelected(radioButton, captchaId) {
  	var cur = document.getElementById(captchaId);
 	var verifyButton = cur.children[2].children[1];
- 	alert();
     if (radioButton.checked) {
-    	alert(2);
       numSelected = 1;
       verifyButton.style.opacity = 1.0;
     }
