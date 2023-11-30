@@ -90,6 +90,9 @@ function verifyClick(captchaId) {
 		captchaOneClicked();
 	}
 
+	verifyButton.style.opacity = 0.5;
+	numSelected = 0;
+
   }
 
 function imageBlockClicked(imageId, captchaId) {
@@ -117,3 +120,14 @@ function imageBlockClicked(imageId, captchaId) {
 		verifyButton.style.opacity = 0.5;
 	}
  }
+
+ function radioButtonSelected(radioButton, captchaId) {
+ 	var cur = document.getElementById(captchaId);
+	var verifyButton = cur.children[2].children[1];
+ 	alert();
+    if (radioButton.checked) {
+    	alert(2);
+      numSelected = 1;
+      verifyButton.style.opacity = 1.0;
+    }
+  }

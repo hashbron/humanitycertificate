@@ -87,18 +87,18 @@
 			</div>
 		</div>
 		<div class="multipleChoice">
-	              <label><input type="radio" name="question0" value="A" /><span>On the playground in middle school when you first saw them smile</span></label>
+	              <label><input type="radio" name="question0" value="A" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>On the playground in middle school when you first saw them smile</span></label>
 				   <br><br>
 
 			
-					<label><input type="radio" name="question0" value="B" /><span>In the canned goods aisle at Trader Joes</span></label>
+					<label><input type="radio" name="question0" value="B" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>In the canned goods aisle at Trader Joes</span></label>
 						<br><br>
 
 
-					<label><input type="radio" name="question0" value="C" /><span>Looking over your shoulder at the White Castle drive thru</span></label>
+					<label><input type="radio" name="question0" value="C" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Looking over your shoulder at the White Castle drive thru</span></label>
 						<br><br>
 				
-					<label><input type="radio" name="question0" value="D" /><span>When their chevy traverse pulled out of your childhood home</span></label>
+					<label><input type="radio" name="question0" value="D" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>When their chevy traverse pulled out of your childhood home</span></label>
 						<br><br>
 		</div>
 		<div class="captchaFooter">
@@ -107,7 +107,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaTwo')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -122,15 +122,33 @@
 			</div>
 		</div>
 		<div class="captchaGrid">
-			<div id="love1"></div>
-			<div id="love2"></div>
-			<div id="love3"></div>
-			<div id="love4"></div>
-			<div id="love5"></div>
-			<div id="love6"></div>
-			<div id="love7"></div>
-			<div id="love8"></div>
-			<div id="love9"></div>
+			<div id="love1" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love2" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love3" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love4" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love5" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love6" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love7" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love8" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="love9" onClick="imageBlockClicked(this.id, 'captchaThree')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
 		</div>
 		<div class="captchaFooter">
 		<div class="captchaIcons">
@@ -138,7 +156,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaThree')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
