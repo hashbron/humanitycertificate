@@ -87,18 +87,18 @@
 			</div>
 		</div>
 		<div class="multipleChoice">
-	              <label><input type="radio" name="question0" value="A" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>On the playground in middle school when you first saw them smile</span></label>
+	              <label><input type="radio" name="question0" value="A"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>On the playground in middle school when you first saw them smile</span></label>
 				   <br><br>
 
 			
-					<label><input type="radio" name="question0" value="B" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>In the canned goods aisle at Trader Joes</span></label>
+					<label><input type="radio" name="question0" value="B"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>In the canned goods aisle at Trader Joes</span></label>
 						<br><br>
 
 
-					<label><input type="radio" name="question0" value="C" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Looking over your shoulder at the White Castle drive thru</span></label>
+					<label><input type="radio" name="question0" value="C"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Looking over your shoulder at the White Castle drive thru</span></label>
 						<br><br>
 				
-					<label><input type="radio" name="question0" value="D" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>When their chevy traverse pulled out of your childhood home</span></label>
+					<label><input type="radio" name="question0" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>When their chevy traverse pulled out of your childhood home</span></label>
 						<br><br>
 		</div>
 		<div class="captchaFooter">
@@ -172,7 +172,7 @@
 			</div>
 		</div>
 		<div class="openEnded">
-			<textarea id="openEndedText" name="openEndedOne" rows="4" cols="50"></textarea>
+			<textarea id="openEndedText" name="openEndedOne" rows="4" cols="50" autocomplete="off" oninput="textareaChanged(this.id, 'captchaFour')"></textarea>
 		</div>
 		<div class="captchaFooter">
 		<div class="captchaIcons">
@@ -180,7 +180,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaFour')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -196,15 +196,33 @@
 			</div>
 		</div>
 		<div class="captchaGrid">
-			<div id="kiss1"></div>
-			<div id="kiss2"></div>
-			<div id="kiss3"></div>
-			<div id="kiss4"></div>
-			<div id="kiss5"></div>
-			<div id="kiss6"></div>
-			<div id="kiss7"></div>
-			<div id="kiss8"></div>
-			<div id="kiss9"></div>
+			<div id="kiss1" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss2" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss3" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss4" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss5" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss6" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss7" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss8" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="kiss9" onClick="imageBlockClicked(this.id, 'captchaFive')">
+				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
 		</div>
 		<div class="captchaFooter">
 		<div class="captchaIcons">
@@ -212,7 +230,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaFive')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -228,16 +246,16 @@
 			</div>
 		</div>
 		<div class="multipleChoice">
-			<label><input type="radio" name="question2" value="A" /><span>Once</span></label>
+			<label><input type="radio" name="question2" value="A"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Once</span></label>
 			 <br><br>
 	  
-			  <label><input type="radio" name="question2" value="B" /><span>Every football season rooting for the Jets</span></label>
+			  <label><input type="radio" name="question2" value="B"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Every football season rooting for the Jets</span></label>
 				  <br><br>
 
-			  <label><input type="radio" name="question2" value="C" /><span>17</span></label>
+			  <label><input type="radio" name="question2" value="C"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>17</span></label>
 				  <br><br>
 		  
-			  <label><input type="radio" name="question2" value="D" /><span>Never</span></label>
+			  <label><input type="radio" name="question2" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Never</span></label>
 				  <br><br>
  	    </div>
 		<div class="captchaFooter">
@@ -246,7 +264,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaSix')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -259,16 +277,17 @@
 				<p>I think I understand! Is this love?</p>
 			</div>
 		</div>
-		<div class="bigImage">
-			
-		</div>
+		<div class="bigImage"></div>
+		<label><input type="radio" name="question2" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSeven')"/><span>No that's a bus</span></label>
+				  <br><br>
+
 		<div class="captchaFooter">
 		<div class="captchaIcons">
 			<div class="iconHover" id="refreshIcon"></div>
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick()">
+		<div class="buttonDiv" onclick="verifyClick('captchaSeven')">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
