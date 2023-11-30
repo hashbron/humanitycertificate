@@ -124,8 +124,22 @@ function imageBlockClicked(imageId, captchaId) {
  function radioButtonSelected(radioButton, captchaId) {
  	var cur = document.getElementById(captchaId);
 	var verifyButton = cur.children[2].children[1];
+
     if (radioButton.checked) {
       numSelected = 1;
       verifyButton.style.opacity = 1.0;
     }
+  }
+
+  function textareaChanged(textareaId, captchaId) {
+  	var cur = document.getElementById(captchaId);
+	var verifyButton = cur.children[2].children[1];
+
+    var textareaValue = document.getElementById(textareaId).value;
+    if (textareaValue != "Type Here....") {
+    	verifyButton.style.opacity = 1;
+    } else {
+    	verifyButton.style.opacity = 0.5;
+    }
+    // You can perform additional actions with the textarea value here
   }
