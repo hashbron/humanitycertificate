@@ -1,3 +1,4 @@
+var numSelected = 0;
 document.getElementById("openEndedText").defaultValue = "Type Here....";
 
 function checkboxClicked() {
@@ -7,7 +8,7 @@ function checkboxClicked() {
 	captcha.src = "assets/initialCaptcha/open.gif";
 }
 
- function captchaSevenClicked(){
+function captchaSevenClicked(){
 	var a = document.getElementById("captchaOne");
 	a.style.display = "none";
 	var b = document.getElementById("captchaTwo");
@@ -54,7 +55,16 @@ function checkboxClicked() {
 	b.style.display = "block";
   }
 
-function verifyClick() {
+function verifyClick(captchaId) {
+
+	var cur = document.getElementById(captchaId);
+	var verifyButton = cur.children[2].children[1];
+
+	if (window.getComputedStyle(verifyButton).opacity == 0.5) {
+		return;
+	} else {
+
+	}
 	
 	var a = document.getElementById("captchaOne");
 	var b = document.getElementById("captchaTwo");
@@ -82,4 +92,28 @@ function verifyClick() {
 
   }
 
- 
+function imageBlockClicked(imageId, captchaId) {
+	var img = document.getElementById(imageId);
+	var check = img.children[0];
+
+	var cur = document.getElementById(captchaId);
+	var verifyButton = cur.children[2].children[1];
+
+
+	if (img.style.margin != "20px") {
+		img.style.margin = "20px";
+		check.style.opacity = "1";
+		numSelected += 1;
+	} else if (img.style.margin == "20px") {
+		img.style.margin = 0;
+		check.style.opacity = "0";
+		numSelected -= 1;
+	}
+
+	if (numSelected > 0) {
+		verifyButton.style.opacity = 1.0;
+
+	} else {
+		verifyButton.style.opacity = 0.5;
+	}
+ }
