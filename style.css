@@ -21,6 +21,42 @@ body{
     left: 20%;
 }
 
+#captchaThree{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#captchaFour{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#captchaFive{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#captchaSix{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#captchaSeven{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+
 .captchaHeader{
     position: absolute;
     top: 1%;
