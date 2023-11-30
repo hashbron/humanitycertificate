@@ -16,48 +16,50 @@ body{
 
 #captchaOne{
     display: block;
+    top: 5%;
+    left: 5%;
 }
 
 #captchaTwo{
     display: none;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 20%;
 }
 
 #captchaThree{
     display: none;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 10%;
+    left: 70%;
 }
 
 #captchaFour{
     display: none;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 15%;
+    left: 50%;
 }
 
 #captchaFive{
     display: none;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 40%;
 }
 
 #captchaSix{
     display: none;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 10%;
+    left: 25%;
 }
 
 #captchaSeven{
     display: none;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 5%;
+    left: 45%;
 }
 
 
@@ -88,6 +90,43 @@ body{
     background-color: red;
     aspect-ratio: 1;
   }
+
+  .multipleChoice{
+    padding: 5%;
+    position: relative;
+    top: 18%;
+    color: black;
+  }
+
+  .openEnded{
+    position: absolute;
+    left: 5%;
+    padding: 5%;
+    top: 25%;
+    width: 80%;
+    height: 50%;
+  }
+
+#openEndedText{
+ position: absolute;
+ font-family: 'Roboto', sans-serif;
+    left: 5%;
+    padding: 5%;
+    top: 1%;
+    width: 80%;
+    height: 70%;
+}
+
+.bigImage{
+    position: absolute;
+    left: 5%;
+    padding: 5%;
+    top: 25%;
+    width: 80%;
+    height: 50%;
+    background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
+    background-size: cover;
+}
 
   .captchaFooter{
     position: absolute;
@@ -147,51 +186,6 @@ body{
     opacity: .8;
 }
 
-#bus1{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.23\ PM.png);
-    background-size: cover; 
-}
-
-#bus2{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.23\ PM.png);
-    background-size: cover; 
-}
-
-#bus3{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
-    background-size: cover; 
-}
-
-#bus4{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.40\ PM.png);
-    background-size: cover; 
-}
-
-#bus5{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.45\ PM.png);
-    background-size: cover; 
-}
-
-#bus6{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
-    background-size: cover; 
-}
-
-#bus7{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.40\ PM.png);
-    background-size: cover; 
-}
-
-#bus8{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.29\ PM.png);
-    background-size: cover; 
-}
-
-#bus9{
-    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
-    background-size: cover; 
-}
-
 .buttonText{
     position: absolute;
     left: 24%;
@@ -203,3 +197,140 @@ body{
 #boldText{
     font-weight: bold;
 }
+
+#bus1{
+    background-image: url(assets/captchapics/bus/2.jpeg);
+    background-size: cover; 
+}
+
+#bus2{
+    background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.23\ PM.png);
+    background-size: cover; 
+}
+
+#bus3{
+    background-image: url(assets/captchapics/bus/319ef16628490adfbcf6ba7f7605ad1b.jpeg);
+    background-size: cover; 
+}
+
+#bus4{
+    background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.29\ PM.png);
+    background-size: cover; 
+}
+
+#bus5{
+    background-image: url(assets/captchapics/bus/m4fog.jpeg);
+    background-size: cover; 
+}
+
+#bus6{
+    background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.40\ PM.png);
+    background-size: cover; 
+}
+
+#bus7{
+    background-image: url(assets/captchapics/bus/qqkfwrtznavq6rgdv0u6pwqdidxuui6z.jpeg);
+    background-size: cover; 
+}
+
+#bus8{
+    background-image: url(assets/captchapics/bus/ski2010-a220001.jpeg);
+    background-size: cover; 
+}
+
+#bus9{
+    background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
+    background-size: cover; 
+}
+
+#love1{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.04.10\ PM.png);
+    background-size: cover; 
+}
+
+#love2{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.04.38\ PM.png);
+    background-size: cover; 
+}
+
+#love3{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.06.39\ PM.png);
+    background-size: cover; 
+}
+
+#love4{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.07.08\ PM.png);
+    background-size: cover; 
+}
+
+#love5{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.07.48\ PM.png);
+    background-size: cover; 
+}
+
+#love6{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.08.14\ PM.png);
+    background-size: cover; 
+}
+
+#love7{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.09.28\ PM.png);
+    background-size: cover; 
+}
+
+#love8{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.14.18\ PM.png);
+    background-size: cover; 
+}
+
+#love9{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.14.57\ PM.png);
+    background-size: cover; 
+}
+
+#kiss1{
+    background-image: url(assets/captchapics/love/Screen\ Shot\ 2023-11-29\ at\ 11.43.24\ PM.png);
+    background-size: cover; 
+}
+
+#kiss2{
+    background-image: url(assets/captchapics/kissing/1000_F_31636958_ANNqtZKnNlukLvxlCxS9rWqpkWmoVy9W.jpg);
+    background-size: cover; 
+}
+
+#kiss3{
+    background-image: url(assets/captchapics/kissing/Screen\ Shot\ 2023-11-29\ at\ 11.34.01\ PM.png);
+    background-size: cover; 
+}
+
+#kiss4{
+    background-image: url(assets/captchapics/kissing/Screen\ Shot\ 2023-11-29\ at\ 11.38.30\ PM.png);
+    background-size: cover; 
+}
+
+#kiss5{
+    background-image: url(assets/captchapics/kissing/Screen\ Shot\ 2023-11-29\ at\ 11.33.46\ PM.png);
+    background-size: cover; 
+}
+
+#kiss6{
+    background-image: url(assets/captchapics/kissing/15269366-couple-kiss.jpg);
+    background-size: cover; 
+}
+
+#kiss7{
+    background-image: url(assets/captchapics/kissing/istockphoto-486875006-1024x1024.jpg);
+    background-size: cover; 
+}
+
+#kiss8{
+    background-image: url(assets/captchapics/kissing/Screen\ Shot\ 2023-11-29\ at\ 11.34.30\ PM.png);
+    background-size: cover; 
+}
+
+#kiss9{
+    background-image: url(assets/captchapics/kissing/Screen\ Shot\ 2023-11-29\ at\ 11.34.55\ PM.png);
+    background-size: cover; 
+}
+
+

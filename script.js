@@ -1,3 +1,5 @@
+document.getElementById("openEndedText").defaultValue = "Type Here....";
+
 function checkboxClicked() {
 	var captcha = document.getElementById('captcha');
 	var checkbox = document.getElementById('checkbox');
