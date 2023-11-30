@@ -1,0 +1,165 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.captchaQuestion{
+ position: absolute;
+ width: 400px;
+ height: 600px;
+ background-color: #ffffff;
+ border: 2px solid #dfdfdf;
+ box-shadow: 3px 3px 3px #dfdfdf;
+ overflow: hidden;
+}
+
+#captchaTwo{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.captchaHeader{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 20%;
+    background-color: #3871e0;
+}
+.questionText{
+    left: 5%;
+    top: 2%;
+    position: absolute;
+    padding: 2%;
+    line-height: .5em;
+}
+.captchaGrid {
+    position: relative;
+    padding: 3%;
+    top: 18%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .captchaGrid div {
+    background-color: red;
+    aspect-ratio: 1;
+  }
+
+  .captchaFooter{
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid #dfdfdf;
+    background-color: #ffffff;
+  }
+
+  .buttonDiv{
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    width: 110px;
+    height: 50px;
+    background-color: #3871e0;
+    border-radius: 5px;
+  }
+
+ .captchaIcons{
+    position: relative;
+    padding: 3%;
+    top: 1%;
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr;
+    grid-gap: 20px;
+ }
+
+ .captchaIcons div {
+    aspect-ratio: 1;
+ }
+
+
+#refreshIcon{
+    background-image: url(assets/icons/2805355.png);
+    background-size: cover;
+    
+}
+
+#hpIcon{
+    background-image: url(assets/icons/5754910.png);
+    background-size: cover;
+  
+}
+
+#infoIcon{
+    background-image: url(assets/icons/157933.png);
+    background-size: cover;
+}
+
+.iconHover{
+    opacity: 0.5;
+}
+
+.iconHover:hover{
+    opacity: .8;
+}
+
+#bus1{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.23\ PM.png);
+    background-size: cover; 
+}
+
+#bus2{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.23\ PM.png);
+    background-size: cover; 
+}
+
+#bus3{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
+    background-size: cover; 
+}
+
+#bus4{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.40\ PM.png);
+    background-size: cover; 
+}
+
+#bus5{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.45\ PM.png);
+    background-size: cover; 
+}
+
+#bus6{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
+    background-size: cover; 
+}
+
+#bus7{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.40\ PM.png);
+    background-size: cover; 
+}
+
+#bus8{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.29\ PM.png);
+    background-size: cover; 
+}
+
+#bus9{
+    background-image: url(assets/captchapics/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
+    background-size: cover; 
+}
+
+.buttonText{
+    position: absolute;
+    left: 24%;
+    top: 40%;
+    padding: 2%;
+    line-height: .5em;
+}
+
+#boldText{
+    font-weight: bold;
+}
