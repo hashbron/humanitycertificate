@@ -157,7 +157,7 @@ body{
     left: 5%;
     top: 2%;
     position: absolute;
-    padding: 2%;
+    padding: 2% 2%;
     line-height: .5em;
 }
 .captchaGrid {
@@ -286,6 +286,7 @@ body{
 
 #boldText{
     font-weight: bold;
+    font-size: x-large;
 }
 
 #bus1{
