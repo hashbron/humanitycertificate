@@ -7,9 +7,9 @@ function checkboxClicked() {
 	checkbox.style.visibility = "hidden";
 	captcha.src = "assets/initialCaptcha/open.gif";
 
-	setTimeout(function() {
+//	setTimeout(function() {
     	document.getElementById('captchaOne').style.display = "block"; // Set the desired opacity value
-  }, 2000); // 3000 milliseconds = 3 seconds
+ // }, 2000); // 3000 milliseconds = 3 seconds
 }
 
 function certificateButtonClicked(){
@@ -38,8 +38,14 @@ function captchaSevenClicked(){
 	f.style.display = "none";
 	var g = document.getElementById("captchaSeven");
 	g.style.display = "none";
-	var h = document.getElementById("certificateButton");
-	h.style.display = "block";
+
+	var gif = document.getElementById("captcha");
+	var certificateButton = document.getElementById("certificateButton");
+	captcha.src = "assets/initialCaptcha/check.gif";
+
+	setTimeout(function() {
+    	certificateButton.style.display = "block";
+  }, 500);
   }
 
   function captchaSixClicked(){
