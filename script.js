@@ -152,7 +152,6 @@ function imageBlockClicked(imageId, captchaId) {
 function radioButtonSelectedSeven(radioButton, captchaId) {
  	var cur = document.getElementById(captchaId);
 	var verifyButton = cur.children[5].children[1];
-	alert(verifyButton);
 
     if (radioButton.checked) {
       numSelected = 1;
