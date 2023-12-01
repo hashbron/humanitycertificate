@@ -278,23 +278,26 @@
 			</div>
 		</div>
 		<div class="bigImage"> </div>
-		<label class="bigImageQuestion"><input type="radio" name="question3" value="D"  autocomplete="off" onchange="radioButtonSelectedSeven(this, 'captchaSeven')"/><span>No that's a bus</span></label>
-				  <br><br>
+		<label class="bigImageQuestion">
+			<input type="radio" name="question3" value="D"  autocomplete="off" onchange="radioButtonSelectedSeven(this, 'captchaSeven')"/>
+			<span>No that's a bus</span>
+		</label>
+		<br><br>
 				 
 		<div class="captchaFooter">
-		<div class="captchaIcons">
-			<div class="iconHover" id="refreshIcon"></div>
-			<div class="iconHover" id="hpIcon"></div>
-			<div class="iconHover" id="infoIcon"></div>
+			<div class="captchaIcons">
+				<div class="iconHover" id="refreshIcon"></div>
+				<div class="iconHover" id="hpIcon"></div>
+				<div class="iconHover" id="infoIcon"></div>
+			</div>
+			<div class="buttonDiv" onclick="verifyClick('captchaSeven')">
+				<div class="buttonText">VERIFY</div>
+			</div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick('captchaSeven')">
-			<div class="buttonText">VERIFY</div>
-		</div>
-	</div>
 	</div>
 
 	<div class="certificateButton" id="certificateButton" onclick="certificateButtonClicked()">
- <p>View Your Certificate Here</p>
+ 		<p>View Your Certificate Here</p>
 	</div>
 
 

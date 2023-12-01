@@ -506,15 +506,14 @@ body{
     }
 
     .certificateButton{
-        display: none;
         position: absolute;
         left: 10%; 
         top: 70%; 
         height: 10%; 
         width: 80%;
-        display: block;
         background-color: #3871e0;
         border-radius: 5px;
+        display: none;
     }
 
     #certificate{
