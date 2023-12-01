@@ -39,45 +39,39 @@ body{
 
 #captchaOne{
     display: none;
-    top: 15%;
-    left: 50%;
+    top: 5%;
+    left: 5%;
 }
-
 #captchaTwo{
     display: none;
     position: absolute;
     top: 25%;
     left: 20%;
 }
-
 #captchaThree{
     display: none;
     position: absolute;
     top: 10%;
     left: 70%;
 }
-
 #captchaFour{
     display: none;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 15%;
+    left: 50%;
 }
-
 #captchaFive{
     display: none;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 40%;
 }
-
 #captchaSix{
     display: none;
     position: absolute;
     top: 10%;
     left: 25%;
 }
-
 #captchaSeven{
     display: none;
     position: absolute;
