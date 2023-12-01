@@ -16,6 +16,12 @@ body{
     outline-offset: 1px;
 }
 
+#checkboxGif{
+    position: absolute; 
+    left: calc(50vw - 308px); 
+    top: calc(45vh - 82px);
+}
+
 .captchaCheckbox:hover{
     outline: 3px solid #A3A3A3;
     box-shadow: 0px -2px 5px grey;
@@ -94,14 +100,15 @@ body{
     top: 57%; 
     height: 10%; 
     width: 30%;
+    text-align: center;
     display: block;
     background-color: #3871e0;
     border-radius: 5px;
 }
 
 .certificateButton p{
-    position: absolute;
-    left: 18%;
+    
+    text-align: center;
     font-size: x-large;
 }
 
@@ -436,3 +443,119 @@ body{
 }
 
 
+@media only screen and (max-device-width: 500px) {
+    
+    .captchaQuestion{
+        position: absolute;
+        width: 380px;
+        height: 600px;
+        background-color: #ffffff;
+        border: 2px solid #dfdfdf;
+        box-shadow: 3px 3px 3px #dfdfdf;
+        overflow: hidden;
+       }
+
+    #captchaOne{
+        display: none;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaTwo{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaThree{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaFour{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaFive{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaSix{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    
+    #captchaSeven{
+        display: none;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+
+    .certificateButton{
+        display: none;
+        position: absolute;
+        left: 10%; 
+        top: 50%; 
+        height: 10%; 
+        width: 80%;
+        display: block;
+        background-color: #3871e0;
+        border-radius: 5px;
+    }
+
+    #certificate{
+        display: none;
+        padding: 3%;
+        font-family: 'Almendra', serif;
+        text-align: center;
+        color: black;
+        position: absolute;
+        left: 0%; 
+        top: 15%;
+        width: 360px;
+        height: 600px;
+        background-color: #ffffff;
+        border: 2px solid #dfdfdf;
+        box-shadow: 3px 3px 3px #dfdfdf;
+        overflow: scroll;
+    }
+    
+    #checkboxGif{
+        position: absolute; 
+        width: 50%;
+        left: calc(50vw - 308px); 
+        top: calc(45vh - 82px);
+    }
+
+    #captcha{
+        position: absolute; 
+        left: 70%;
+        width: 180%;
+    }
+    
+    .captchaCheckbox{
+        position: absolute;
+        z-index: 1;
+        left: 80%; 
+        top: 30%; 
+        height: 68px; 
+        width: 48px;
+        background-color: transparent;
+        outline: 3x solid #B4B4B4;
+        border-radius: 5px;
+        outline-offset: 1px;
+    }
+
+}

@@ -115,7 +115,7 @@ function verifyClick(captchaId) {
 function imageBlockClicked(imageId, captchaId) {
 	var img = document.getElementById(imageId);
 	var check = img.children[0];
-
+	var alt = document.getElementById(imageId).alt;
 	var cur = document.getElementById(captchaId);
 	var verifyButton = cur.children[2].children[1];
 	//var ele3 = document.getElementsByName('busPic'); ??? log value of the divs somehow 
@@ -124,7 +124,7 @@ function imageBlockClicked(imageId, captchaId) {
 		img.style.margin = "20px";
 		check.style.opacity = "1";
 		numSelected += 1;
-		console.log(imageId);
+		console.log(alt);
 	} else if (img.style.margin == "20px") {
 		img.style.margin = 0;
 		check.style.opacity = "0";
