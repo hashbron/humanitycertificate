@@ -79,6 +79,64 @@ body{
     left: 45%;
 }
 
+#checkboxGif{
+    display: block;
+}
+
+#certificateButton{
+    display: none;
+}
+
+.certificateButton{
+    display: none;
+    position: absolute;
+    left: 35%; 
+    top: 57%; 
+    height: 10%; 
+    width: 30%;
+    display: block;
+    background-color: #3871e0;
+    border-radius: 5px;
+}
+
+.certificateButton p{
+    position: absolute;
+    left: 18%;
+    font-size: x-large;
+}
+
+#certificate{
+    display: none;
+    padding: 3%;
+    font-family: 'Almendra', serif;
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 63%; 
+    top: 5%;
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff;
+    border: 2px solid #dfdfdf;
+    box-shadow: 3px 3px 3px #dfdfdf;
+    overflow: scroll;
+}
+
+
+#certText{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#asciiHands{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: -6%;
+    color: black;
+}
+
+
 
 .captchaHeader{
     position: absolute;
@@ -104,7 +162,7 @@ body{
     grid-gap: 5px;
   }
   .captchaGrid div {
-    background-color: red;
+    background-color: #ffffff;
     aspect-ratio: 1;
   }
 
@@ -143,6 +201,13 @@ body{
     height: 50%;
     background-image: url(assets/captchapics/bus/Screen\ Shot\ 2023-11-29\ at\ 7.52.34\ PM.png);
     background-size: cover;
+}
+
+.bigImageQuestion{
+    position: absolute; 
+    color: black;
+    left: 4%;
+    top: 83%;
 }
 
   .captchaFooter{
