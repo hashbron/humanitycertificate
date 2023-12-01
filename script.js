@@ -1,4 +1,6 @@
 var numSelected = 0;
+const imagesMap = new Map();
+
 document.getElementById("openEndedText").defaultValue = "Type Here....";
 
 function checkboxClicked() {
@@ -126,15 +128,17 @@ function imageBlockClicked(imageId, captchaId) {
 	var verifyButton = cur.children[2].children[1];
 	//var ele3 = document.getElementsByName('busPic'); ??? log value of the divs somehow 
 
+	// If image is unselected
 	if (img.style.margin != "20px") {
 		img.style.margin = "20px";
 		check.style.opacity = "1";
 		numSelected += 1;
-		console.log(alt);
+		imagesMap.set('imageId', 1);
 	} else if (img.style.margin == "20px") {
 		img.style.margin = 0;
 		check.style.opacity = "0";
 		numSelected -= 1;
+		imagesMap.set('imageId', 0);
 	}
 
 	if (numSelected > 0) {
@@ -210,6 +214,10 @@ function getInputVal() {
   console.log(inputEl.value);
   document.getElementById("openEndedTextResult").innerHTML
 				= inputEl.value;
+}
+
+function populateCertificate() {
+	
 }
 
 //images??
