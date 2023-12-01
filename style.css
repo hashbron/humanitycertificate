@@ -445,6 +445,8 @@ body{
 
 @media only screen and (max-device-width: 500px) {
     
+  
+
     .captchaQuestion{
         position: absolute;
         width: 380px;
@@ -507,7 +509,7 @@ body{
         display: none;
         position: absolute;
         left: 10%; 
-        top: 50%; 
+        top: 70%; 
         height: 10%; 
         width: 80%;
         display: block;
@@ -524,7 +526,7 @@ body{
         position: absolute;
         left: 0%; 
         top: 15%;
-        width: 360px;
+        width: 330px;
         height: 600px;
         background-color: #ffffff;
         border: 2px solid #dfdfdf;
