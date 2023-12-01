@@ -560,4 +560,12 @@ body{
         outline-offset: 1px;
     }
 
+    .buttonText{
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        padding: 2%;
+        line-height: .5em;
+    }
+
 }
