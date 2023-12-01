@@ -147,7 +147,18 @@ function imageBlockClicked(imageId, captchaId) {
       numSelected = 1;
       verifyButton.style.opacity = 1.0;
     }
-  }
+}
+
+function radioButtonSelectedSeven(radioButton, captchaId) {
+ 	var cur = document.getElementById(captchaId);
+	var verifyButton = cur.children[5].children[1];
+	alert(verifyButton);
+
+    if (radioButton.checked) {
+      numSelected = 1;
+      verifyButton.style.opacity = 1.0;
+    }
+}
 
   function textareaChanged(textareaId, captchaId) {
   	var cur = document.getElementById(captchaId);
