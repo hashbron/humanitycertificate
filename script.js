@@ -12,6 +12,17 @@ function checkboxClicked() {
   }, 2000); // 3000 milliseconds = 3 seconds
 }
 
+function certificateButtonClicked(){
+	var h = document.getElementById("certificateButton");
+	h.style.display = "none";
+	var i = document.getElementById("checkboxGif");
+	i.style.display = "none";
+	var j = document.getElementById("certificate");
+	j.style.display = "block";
+	var k = document.getElementById("asciiHands");
+	k.style.display = "block";
+}
+
 function captchaSevenClicked(){
 	var a = document.getElementById("captchaOne");
 	a.style.display = "none";
@@ -27,6 +38,8 @@ function captchaSevenClicked(){
 	f.style.display = "none";
 	var g = document.getElementById("captchaSeven");
 	g.style.display = "none";
+	var h = document.getElementById("certificateButton");
+	h.style.display = "block";
   }
 
   function captchaSixClicked(){
@@ -105,12 +118,13 @@ function imageBlockClicked(imageId, captchaId) {
 
 	var cur = document.getElementById(captchaId);
 	var verifyButton = cur.children[2].children[1];
-
+	//var ele3 = document.getElementsByName('busPic'); ??? log value of the divs somehow 
 
 	if (img.style.margin != "20px") {
 		img.style.margin = "20px";
 		check.style.opacity = "1";
 		numSelected += 1;
+		console.log(imageId);
 	} else if (img.style.margin == "20px") {
 		img.style.margin = 0;
 		check.style.opacity = "0";
@@ -147,3 +161,39 @@ function imageBlockClicked(imageId, captchaId) {
     }
     // You can perform additional actions with the textarea value here
   }
+
+
+  //storing variables
+ 
+//radios
+function displayRadioValue() {
+	var ele = document.getElementsByName('question0');
+
+	for (i = 0; i < ele.length; i++) {
+		if (ele[i].checked)
+			document.getElementById("radio1Result").innerHTML
+				= ele[i].value;
+				console.log(ele[i].value);
+	}
+}
+
+function displayRadioValue2() {
+	var ele2 = document.getElementsByName('question2');
+
+	for (i = 0; i < ele2.length; i++) {
+		if (ele2[i].checked)
+			document.getElementById("radio2Result").innerHTML
+				= ele2[i].value;
+				console.log(ele2[i].value);
+	}
+}
+// open ended text
+const inputEl = document.getElementById("openEndedText");
+
+function getInputVal() {
+  console.log(inputEl.value);
+  document.getElementById("openEndedTextResult").innerHTML
+				= inputEl.value;
+}
+
+//images??

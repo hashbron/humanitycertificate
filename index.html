@@ -20,7 +20,7 @@
 
 	
 
-	<div style="position: absolute; left: calc(50vw - 308px); top: calc(45vh - 82px);">
+	<div id="checkboxGif" style="position: absolute; left: calc(50vw - 308px); top: calc(45vh - 82px);">
 		<!-- add onHover for checkbox div to darken the border -->
 		<div id="checkbox" class="captchaCheckbox" onClick="checkboxClicked()"></div>
 		<img id="captcha" src="assets/initialCaptcha/uncheck.jpg"/>
@@ -32,35 +32,34 @@
 			<div class="questionText">
 				<p>Select all squares with</p>
 				<p id="boldText">BUS</p>
-				<p>If there are none click skip</p>
 			</div>
 		</div>
 		<div class="captchaGrid">
-			<div id="bus1" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus1" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus2" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus2" class="busPic" value="hello" onClick="imageBlockClicked(this.id, 'captchaOne')">
+				<img value="hello" src="assets/icons/image_select_checkbox.png" id="innerCheck">
+			</div>
+			<div id="bus3" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus3" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus4" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus4" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus5" class="busPic"  onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus5" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus6" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus6" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus7" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus7" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus8" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
-			<div id="bus8" onClick="imageBlockClicked(this.id, 'captchaOne')">
-				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
-			</div>
-			<div id="bus9" onClick="imageBlockClicked(this.id, 'captchaOne')">
+			<div id="bus9" class="busPic" onClick="imageBlockClicked(this.id, 'captchaOne')">
 				<img src="assets/icons/image_select_checkbox.png" id="innerCheck">
 			</div>
 		</div>
@@ -81,24 +80,24 @@
 		<div class="captchaHeader">
 			<div class="questionText">
 				<p>I am not convinced you are human.</p>
-				<p>Please try again. Where were you the first time</p>
-				<p>you realized you were in love?</p> 
+				<p>Please try again. The last time you were in love,</p>
+				<p>how did you know?</p> 
 				
 			</div>
 		</div>
 		<div class="multipleChoice">
-	              <label><input type="radio" name="question0" value="A"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>On the playground in middle school when you first saw them smile</span></label>
+	              <label><input type="radio" id="myCheck" name="question0" value="Upon meeting them— i felt an immediate recognition, followed by an intense sadness when i recalled all the years I’d lived in the world, ignorant of their presence"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Upon meeting them— i felt an immediate recognition, followed by an intense sadness when i recalled all the years I’d lived in the world, ignorant of their presence</span></label>
 				   <br><br>
 
 			
-					<label><input type="radio" name="question0" value="B"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>In the canned goods aisle at Trader Joes</span></label>
+					<label><input type="radio" id="myCheck1" name="question0" value="They reminded me of my ex"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>They reminded me of my ex</span></label>
 						<br><br>
 
 
-					<label><input type="radio" name="question0" value="C"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Looking over your shoulder at the White Castle drive thru</span></label>
+					<label><input type="radio" id="myCheck2" name="question0" value="When I embarassed myself, so they in turn embarassed themselves by failing at climbing a tree"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>When I embarassed myself, so they in turn embarassed themselves by failing at climbing a tree</span></label>
 						<br><br>
 				
-					<label><input type="radio" name="question0" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>When their chevy traverse pulled out of your childhood home</span></label>
+					<label><input type="radio" id="myCheck3" name="question0" value="Seeing them drunk singing karaoke"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaTwo')"/><span>Seeing them drunk singing karaoke</span></label>
 						<br><br>
 		</div>
 		<div class="captchaFooter">
@@ -107,7 +106,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick('captchaTwo')">
+		<div class="buttonDiv" onclick="verifyClick('captchaTwo'); displayRadioValue();">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -180,7 +179,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick('captchaFour')">
+		<div class="buttonDiv" onclick="verifyClick('captchaFour'); getInputVal();">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -246,16 +245,16 @@
 			</div>
 		</div>
 		<div class="multipleChoice">
-			<label><input type="radio" name="question2" value="A"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Once</span></label>
+			<label><input type="radio" name="question2" value="Once, and it left me so hardened that I haven’t loved since "  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Once, and it left me so hardened that I haven’t loved since </span></label>
 			 <br><br>
 	  
-			  <label><input type="radio" name="question2" value="B"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Every football season rooting for the Jets</span></label>
+			  <label><input type="radio" name="question2" value="My heart breaks in small ways daily"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>My heart breaks in small ways daily</span></label>
 				  <br><br>
 
-			  <label><input type="radio" name="question2" value="C"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>17</span></label>
+			  <label><input type="radio" name="question2" value="17"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>17</span></label>
 				  <br><br>
 		  
-			  <label><input type="radio" name="question2" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>Never</span></label>
+			  <label><input type="radio" name="question2" value="In my attempt to protect my heart by closing myself off from love, I have found that my heart is slowly and constantly breaking "  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSix')"/><span>In my attempt to protect my heart by closing myself off from love, I have found that my heart is slowly and constantly breaking </span></label>
 				  <br><br>
  	    </div>
 		<div class="captchaFooter">
@@ -264,7 +263,7 @@
 			<div class="iconHover" id="hpIcon"></div>
 			<div class="iconHover" id="infoIcon"></div>
 		</div>
-		<div class="buttonDiv" onclick="verifyClick('captchaSix')">
+		<div class="buttonDiv" onclick="verifyClick('captchaSix'); displayRadioValue2();">
 			<div class="buttonText">VERIFY</div>
 		</div>
 	</div>
@@ -277,10 +276,10 @@
 				<p>I think I understand! Is this love?</p>
 			</div>
 		</div>
-		<div class="bigImage"></div>
-		<label><input type="radio" name="question2" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSeven')"/><span>No that's a bus</span></label>
+		<div class="bigImage"> </div>
+		<label class="bigImageQuestion"><input type="radio" name="question3" value="D"  autocomplete="off" onchange="radioButtonSelected(this, 'captchaSeven')"/><span>No that's a bus</span></label>
 				  <br><br>
-
+				 
 		<div class="captchaFooter">
 		<div class="captchaIcons">
 			<div class="iconHover" id="refreshIcon"></div>
@@ -292,6 +291,91 @@
 		</div>
 	</div>
 	</div>
+
+	<div class="certificateButton" id="certificateButton" onclick="certificateButtonClicked()">
+ <p>View Your Certificate Here</p>
+	</div>
+
+
+	<pre id="ascii>                                                                                                                                                      
+:::..                                                                                                                                                     
+:::::::..                                                                                                                                                 
+:::::::..::.                                                                                                                                              
+-----:::..:::..                                                                                                                                           
++=====---::::::::..                                                                                                                                       
+++++++===--:::::::::::...                                                                                                                                 
+++++++++=--:::::::::::::::::......                                                                                                                        
++++++++++=---::::::::::::::::::::::::.....                                                                                                                
+++++++++++==----::::::::::::::::::::::::...........                                                                                                       
++++++++++++++===-----::::::::::::::::::::::::::...::.......                                                                                               
+++++++++++++++++++==----:::::::::::::::::::::::::::..:::::..........                                                                                      
+=++**++++++++++*++++====--::::::::::::::::::::::------::....:::::::::..                                                                                   
+ .:+++**+++++++======++++==-----::::::::::::::.::--------::::::.::::::::..                                                                                
+    .++++++++*++======+++++++++==---::::::------::::-=+++====-------:::-::::...                                                                           
+      :++++++++*+++++++=====++***+==--::::-=======-:::.::=+++++==---==-::---::::..                                                                        
+        .=+++++++++++*+*+++==--=++*++---:::-==++++++--:::::::-+++++==---:::-----:::..                                                                     
+           .:==+++++++++++++++===++++=--:::::=+++++++++=---:::::=++++++==--:::===---:::.                                                                  
+                ..:-=========++++++***+=-:::::=+-==++++++++=-=-::::=++++++==--::-++===.                                                                   
+                             ...:==+++++=--:::.    ..-+++++++=--:::. .-+++++==----:..                                                                     
+                                    :=+**+=---:.       .:=+++++=--:::   .=++++===---:.                                                                    
+                                      .-+*+=-:-:.          .-+++++=--:..   .=++++===-::..                                                                 
+                                        :+*++=---:           .-+++++=--::.    .=+++=-=---.                                                                
+                                         .+*++=---:            .-++++==---.     ..=++=-+:                                                                 
+                                          .=*++=--:.              :++++==---.       ...                                                                   
+                                            -+*+=---.              .:+++++=-:.                        .::.                                                
+                                             .+*+=---:.               :++++==-:.                     .::::..                                              
+                                              .++===--:.                .=+=++=:                    .:---:::.                                             
+                                                -++==---.                 .-=:.                     .------:::.                                           
+                                                 .+++==:::            .....                          :-===---:::                                          
+                                                   :+==--::          .::::::..                        :======--::.                                        
+                                                     :=+=-.           -====---::.                      .=====--:::.                                       
+                                                       ..              :=::-==--::..                     .===--:::::.                                     
+                                                                       .::::::===---::..                   :----::::::..                                  
+                                                                       .--====--====---:::...               .:---::::::....                               
+                                                                        -=++++==-++==--:-:::::...             :---::::::::..                              
+                                                                         :==+++==---+=---------:::........     ::::::::::::...                            
+                                                                          .=++++-::-:++=======:::::::::::::::::-:.:::::::::::..                           
+                                                                           :=++=:====::-==+=-::----::::::::::::-:::::::::::::::..                         
+                                                                           .=++--=++=------::----::::--::::::::--:::::::::::::::..                        
+                                                                            :=--==++==-===-----::--------:--:-::-----:::::::::::::.                       
+                                                                            .--===++=-:::=--:----------:---------------::::::::::::.                      
+                                                                             -=====+-====---:------------:--------------:::::::::--:.                     
+                                                                             =======--=++=-==----------::::-=------------------------.                    
+                                                                             :===+++===++=-:---------::::::---=---------------------=-.                   
+                                                                               ..-=+=====+=-:::::::::-:::-::::::----------------=====-:.                  
+                                                                                   .:=====+=-::::::::::::::::::::::--=-----------=====::.                 
+                                                                                     =====+====---::-::::::::::::::::::---------=====--::                 
+                                                                                      .===+====------::::::::::.::::::::--------=====---::                
+                                                                                        .========----:::::::::::::::::::::::-----====-:::::               
+                                                                                          -==+==+=---::::::::::::::::::::::-----=====---::::.             
+                                                                                           :===++===-::::::::::::::::::::-------=======--::--:.           
+                                                                                            .===+===---------------------------=======-----::-::          
+                                                                                              .:-=====================-===========--===------::::..       
+                                                                                                   .:==+++++===================+====-====------::::.      
+                                                                                                       .-==++++++++++++=+++++++++======-===-----::::::.   
+                                                                                                           .-=====++===++++++++++++======-==-------:::::..
+                                                                                                               ...:--=====++++++++++===========------:::::
+                                                                                                                       .:=+++++++++++===========--------::
+                                                                                                                          .==+++++++===============-------
+                                                                                                                            .==++++++============---------
+                                                                                                                              .==++++++=============------
+                                                                                                                                .-=++++++==============---
+
+	</pre>
+	<div class="certificate" id="certificate">
+		<div id="allCertText">
+		<h1>CERTIFICATE OF HUMANITY</h1>
+		<div id="certText">
+			<div class="certificate" id="radio1Result"></div>
+			<br><br>
+			<div class="certificate" id="radio2Result"></div>
+			<br><br>
+			<div class="certificate" id="openEndedTextResult"></div>
+			<br><br>
+			<p>More textxttttttt</p>
+		</div>
+	</div>
+		   </div>
 
 
 
