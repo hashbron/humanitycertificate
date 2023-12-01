@@ -7,9 +7,9 @@ function checkboxClicked() {
 	checkbox.style.visibility = "hidden";
 	captcha.src = "assets/initialCaptcha/open.gif";
 
-//	setTimeout(function() {
+	setTimeout(function() {
     	document.getElementById('captchaOne').style.display = "block"; // Set the desired opacity value
- // }, 2000); // 3000 milliseconds = 3 seconds
+ 	}, 2000); // 3000 milliseconds = 3 seconds
 }
 
 function certificateButtonClicked(){
