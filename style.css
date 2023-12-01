@@ -39,8 +39,8 @@ body{
 
 #captchaOne{
     display: none;
-    top: 5%;
-    left: 5%;
+    top: 15%;
+    left: 50%;
 }
 
 #captchaTwo{
@@ -60,8 +60,8 @@ body{
 #captchaFour{
     display: none;
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 5%;
+    left: 5%;
 }
 
 #captchaFive{
