@@ -1,5 +1,5 @@
 var numSelected = 0;
-document.getElementById("openEndedText").defaultValue = "Type Here....";
+document.getElementById("openEndedText").placeholder = "Type Here....";
 
 function checkboxClicked() {
 	var captcha = document.getElementById('captcha');
@@ -170,7 +170,7 @@ function radioButtonSelectedSeven(radioButton, captchaId) {
 	var verifyButton = cur.children[2].children[1];
 
     var textareaValue = document.getElementById(textareaId).value;
-    if (textareaValue != "Type Here....") {
+    if (textareaValue != "") {
     	verifyButton.style.opacity = 1;
     } else {
     	verifyButton.style.opacity = 0.5;

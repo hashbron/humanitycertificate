@@ -345,6 +345,7 @@ body{
     top: 40%;
     padding: 2%;
     line-height: .5em;
+    user-select: none;
 }
 
 #love1{
